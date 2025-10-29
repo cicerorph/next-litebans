@@ -1,36 +1,37 @@
 export const siteConfig = {
-  title: "Next Litebans",
+  title: "KowaMC",
   logo: "/logo.webp",
   favicon: "/logo.webp",
   languages: {
     available: [
+      "br",
       "en",
       "es",
     ],
-    default: "en",
+    default: "br",
   },
   console: {
-    name: "Console", // Just for filter badge
-    uuid: "[Console]", // Use for filter url and to check if a punishment is made from the Console. In some versions of Litebans, the console uuid is "CONSOLE".
+    name: "KowaMC", // Just for filter badge
+    uuid: "KowaMC", // Use for filter url and to check if a punishment is made from the Console. In some versions of Litebans, the console uuid is "CONSOLE".
     icon: "/console.webp",
     body: "/console-body.webp",
     bust: "/console-bust.webp",
   },
-  defaultPlayerLookup: "YoSoyVilla",
+  defaultPlayerLookup: "MubiLop",
   // When enabled, body and bust images will show a steve skin
   bedrock: {
-    enabled: false,
-    prefix: "BP_",
+    enabled: true,
+    prefix: ".",
   },
   openGraph: {
-    dateFormat: "yyyy-MM-dd hh:mm:ss",
+    dateFormat: "dd-MM-yyyy hh:mm:ss",
     pages: {
       main: {
         // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        next-litebans punishment web interface.
+        Lista de punições da KowaMC
 
-        Total punishments: {total}
+        Punições totais: {total}
 
           🚫 Bans: {bans}
           🔇 Mutes: {mutes}
@@ -41,7 +42,7 @@ export const siteConfig = {
       history: {
         // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        Total punishments: {total}
+        Punições totais: {total}
 
           🚫 Bans: {bans}
           🔇 Mutes: {mutes}
@@ -52,9 +53,9 @@ export const siteConfig = {
       player: {
         // Placeholders: {name}, {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        {name}'s punishments.
+        Punições de {name}.
 
-        Total punishments: {total}
+        Punições totais: {total}
 
           🚫 Bans: {bans}
           🔇 Mutes: {mutes}
@@ -63,91 +64,91 @@ export const siteConfig = {
         `,
         bans: {
           description: `
-          {name}'s bans.
+          Banimentos de {name}.
 
-          Total bans: {total}
+          Banimentos totais: {total}
           `,
         },
         mutes: {
           description: `
-          {name}'s mutes.
+          Mutes de {name}.
 
-          Total mutes: {total}
+          Mutes totais: {total}
           `,
         },
         warns: {
           description: `
-          {name}'s warns.
+          Warns de {name}.
 
-          Total warns: {total}
+          Warns totais: {total}
           `,
         },
         kicks: {
           description: `
-          {name}'s kicks.
+          Kicks de {name}.
 
-          Total kicks: {total}
+          Kicks totais: {total}
           `,
         },
       },
       bans: {
         // Placeholders: {total}
-        description: "Total bans: {total}"
+        description: "Bans totais: {total}"
       },
       mutes: {
         // Placeholders: {total}
-        description: "Total mutes: {total}"
+        description: "Mutes totais: {total}"
       },
       warns: {
         // Placeholders: {total}
-        description: "Total warns: {total}"
+        description: "Warns totais: {total}"
       },
       kicks: {
         // Placeholders: {total}
-        description: "Total kicks: {total}"
+        description: "Kicks totais: {total}"
       },
     },
     punishments: {
       ban: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {duration}, {server}
         description: `
-        👤 User: {name}
+        👤 Usuário: {name}
         👮 Staff: {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
-        ⌛ Duration: {duration}
+        📜 Razão: {reason}
+        🕒 Data: {time}
+        ⌛ Duração: {duration}
         `
       },
       mute: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {duration}, {server}
         description: `
-        👤 User: {name}
+        👤 Usuário: {name}
         👮 Staff: {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
-        ⌛ Duration: {duration}
+        📜 Razão: {reason}
+        🕒 Data: {time}
+        ⌛ Duração: {duration}
         `
       },
       warn: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {server}
         description: `
-        👤 User: {name}
+        👤 Usuário: {name}
         👮 Staff: {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
+        📜 Razão: {reason}
+        🕒 Data: {time}
         `
       },
       kick: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {server}
         description: `
-        👤 User: {name}
+        👤 Usuário: {name}
         👮 Staff: {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
+        📜 Razão: {reason}
+        🕒 Data: {time}
         `
       }
     }
