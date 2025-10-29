@@ -4,7 +4,7 @@ const language = {
     lang_name: "Español"
   },
   site: {
-    description: "Una interfaz web simple para LiteBans."
+    description: "Lista de sanciones de KowaMC"
   },
   words: {
     bans: {
